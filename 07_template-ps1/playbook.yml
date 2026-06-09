@@ -1,0 +1,24 @@
+---
+- name: devops 사용자의 PS1 환경 변수 배포
+  hosts: all
+  gather_facts: false
+  remote_user: devops
+  become: true
+  tasks:
+    - name: templates/bashrc.j2 파일을 devops 사용자의 ~/.bashrc 에 배포
+      ansible.builtin.template:
+        src: templates/bashrc.j2
+        dest: /home/devops/.bashrc
+        owner: devops
+        group: devops
+        mode: '0644'
+        tags: [ ps1 ]
+
+    - name: templates/vimrc.j2 파일을 devops 사용자의 ~/.vimrc 에 배포
+      ansible.builtin.template:
+        src: templates/vimrc.j2
+        dest: /home/devops/.vimrc
+        owner: devops
+        group: devops
+        mode: '0644'
+        tags: [ vim ]

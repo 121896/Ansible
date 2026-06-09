@@ -1,0 +1,53 @@
+---
+- name: restore_playbook.yml
+  hosts: all
+  vars_files:
+    - vars/vars.yml
+  tasks:
+    ######################################
+    # 1) 방화벽 포트 제거
+    # 2) 서비스 종료
+    # 3) 서비스 설정 삭제
+    # 4) 패키지 삭제
+    ######################################
+
+
+    # 1) 방화벽 포트 제거 - {{ fw_http }}, {{ fw_https }}
+    - name: 1) 방화벽 포트 제거 - {{ fw_http }}, {{ fw_https }}
+      ansible.posix.firewalld:
+        service: "{{ item }}"
+        permanent: true
+        immediate: true
+        state: disabled
+      loop:
+        - "{{ fw_http }}"
+        - "{{ fw_https }}"
+
+
+    # 2) 서비스 종료 - {{ svc_web }}, {{ svc_fw }}
+    - name: 2) 서비스 종료 - {{ svc_web }}, {{ svc_fw }}
+      ansible.builtin.systemd:
+        name: "{{ item }}"
+        state: stopped
+        enabled: false
+      loop:
+        - "{{ svc_web }}"
+        - "{{ svc_fw }}"
+
+
+    # 3) 서비스 설정 삭제 - {{ file_index }}
+    #   * /etc/httpd/conf/httpd.conf, /etc/httpd/conf.d/*.conf
+    #   * /var/www/html/*
+    - name: 3) 서비스 설정 삭제 - {{ file_index }}
+      ansible.builtin.file:
+        path: "{{ file_index }}"
+        state: absent
+
+
+    # 4) 패키지 삭제 - {{ pkg_http }}, {{ pkg_https }}
+    - name: 4) 패키지 삭제 - {{ pkg_http }}, {{ pkg_https }}
+      ansible.builtin.dnf:
+        name:
+          - "{{ pkg_http }}"
+          - "{{ pkg_https }}"
+        state: absent

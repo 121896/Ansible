@@ -1,0 +1,87 @@
+Jun  8 09:29:25 ansible4 polkitd[877]: Loading rules from directory /etc/polkit-1/rules.d
+Jun  8 09:29:25 ansible4 polkitd[877]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jun  8 09:29:25 ansible4 polkitd[877]: Finished loading, compiling and executing 13 rules
+Jun  8 09:29:25 ansible4 polkitd[877]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jun  8 09:29:25 ansible4 sshd[995]: Server listening on 0.0.0.0 port 22.
+Jun  8 09:29:25 ansible4 sshd[995]: Server listening on :: port 22.
+Jun  8 09:42:22 ansible4 sshd[1494]: Accepted publickey for ansible from 192.168.10.10 port 39182 ssh2: RSA SHA256:E3pqI2uHxknfxLwdHy/N3P9/H6rFqybdNVsVn13aMb4
+Jun  8 09:42:22 ansible4 systemd[1498]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 09:42:22 ansible4 sshd[1494]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 09:42:23 ansible4 sudo[1690]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-fqxbiniyrljcoaybbupcemrtcptgqona ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780879342.610921-2848-87829852436606/AnsiballZ_setup.py'
+Jun  8 09:42:23 ansible4 sudo[1690]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 09:42:23 ansible4 sudo[1690]: pam_unix(sudo:session): session closed for user root
+Jun  8 09:42:23 ansible4 sudo[1770]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-zhiwjthkishdanlzakccckdnxhrwkboc ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780879342.610921-2848-87829852436606/AnsiballZ_find.py'
+Jun  8 09:42:23 ansible4 sudo[1770]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 09:43:09 ansible4 polkitd[878]: Loading rules from directory /etc/polkit-1/rules.d
+Jun  8 09:43:09 ansible4 polkitd[878]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jun  8 09:43:09 ansible4 polkitd[878]: Finished loading, compiling and executing 13 rules
+Jun  8 09:43:09 ansible4 polkitd[878]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jun  8 09:43:09 ansible4 sshd[927]: Server listening on 0.0.0.0 port 22.
+Jun  8 09:43:09 ansible4 sshd[927]: Server listening on :: port 22.
+Jun  8 13:23:07 ansible4 sshd[1582]: Accepted publickey for ansible from 192.168.10.10 port 43306 ssh2: RSA SHA256:E3pqI2uHxknfxLwdHy/N3P9/H6rFqybdNVsVn13aMb4
+Jun  8 13:23:07 ansible4 systemd[1586]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 13:23:07 ansible4 sshd[1582]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 13:23:08 ansible4 sudo[1777]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-lnbfqfwouzwslshwkpcshtyyandapnly ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780892587.9137459-11670-22128951518744/AnsiballZ_dnf.py'
+Jun  8 13:23:08 ansible4 sudo[1777]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 13:23:11 ansible4 sudo[1777]: pam_unix(sudo:session): session closed for user root
+Jun  8 13:23:11 ansible4 sudo[1999]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-tplkjmcozkhjivvrkqyyuqfhmyciteuk ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780892591.4140053-11788-76639257871677/AnsiballZ_dnf.py'
+Jun  8 13:23:11 ansible4 sudo[1999]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 13:23:26 ansible4 sudo[1999]: pam_unix(sudo:session): session closed for user root
+Jun  8 13:24:26 ansible4 sshd[1602]: Received disconnect from 192.168.10.10 port 43306:11: disconnected by user
+Jun  8 13:24:26 ansible4 sshd[1602]: Disconnected from user ansible 192.168.10.10 port 43306
+Jun  8 13:24:26 ansible4 sshd[1582]: pam_unix(sshd:session): session closed for user ansible
+Jun  8 14:38:55 ansible4 sshd[2290]: Accepted publickey for ansible from 192.168.10.10 port 33226 ssh2: RSA SHA256:E3pqI2uHxknfxLwdHy/N3P9/H6rFqybdNVsVn13aMb4
+Jun  8 14:38:55 ansible4 systemd[2294]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 14:38:56 ansible4 sshd[2290]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 14:38:56 ansible4 sudo[2485]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-pyiilnmfiuwfvhjxdqpslgvccbsthpjp ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780897136.0932834-12362-229272279239334/AnsiballZ_dnf.py'
+Jun  8 14:38:56 ansible4 sudo[2485]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 14:38:57 ansible4 sudo[2485]: pam_unix(sudo:session): session closed for user root
+Jun  8 14:38:57 ansible4 sudo[2638]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-ifjobrmousxblwybnlrronuifrwfbjba ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780897137.2868094-12445-176551524639387/AnsiballZ_dnf.py'
+Jun  8 14:38:57 ansible4 sudo[2638]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 14:38:58 ansible4 sudo[2638]: pam_unix(sudo:session): session closed for user root
+Jun  8 14:39:58 ansible4 sshd[2310]: Received disconnect from 192.168.10.10 port 33226:11: disconnected by user
+Jun  8 14:39:58 ansible4 sshd[2310]: Disconnected from user ansible 192.168.10.10 port 33226
+Jun  8 14:39:58 ansible4 sshd[2290]: pam_unix(sshd:session): session closed for user ansible
+Jun  8 18:09:30 ansible4 sshd[2740]: Accepted publickey for ansible from 192.168.10.10 port 33110 ssh2: RSA SHA256:E3pqI2uHxknfxLwdHy/N3P9/H6rFqybdNVsVn13aMb4
+Jun  8 18:09:30 ansible4 systemd[2744]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 18:09:30 ansible4 sshd[2740]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 18:09:30 ansible4 sudo[2936]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-gzkvdjsunmesrsviipovjqzblcdhqqwp ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780909770.4050121-16178-237822590688055/AnsiballZ_stat.py'
+Jun  8 18:09:30 ansible4 sudo[2936]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 18:09:30 ansible4 sudo[2936]: pam_unix(sudo:session): session closed for user root
+Jun  8 18:09:31 ansible4 sudo[3061]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-ndesjlarjsxmavzzddrswpvajvfkbplw ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780909770.4050121-16178-237822590688055/AnsiballZ_copy.py'
+Jun  8 18:09:31 ansible4 sudo[3061]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 18:09:31 ansible4 sudo[3061]: pam_unix(sudo:session): session closed for user root
+Jun  8 18:09:52 ansible4 sudo[3264]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-lglvpdxrlfhbbfpgrsoycfuzpckohfeh ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780909792.3185992-16333-168855706431042/AnsiballZ_command.py'
+Jun  8 18:09:52 ansible4 sudo[3264]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 18:09:52 ansible4 sudo[3264]: pam_unix(sudo:session): session closed for user root
+Jun  8 18:10:52 ansible4 sshd[2761]: Received disconnect from 192.168.10.10 port 33110:11: disconnected by user
+Jun  8 18:10:52 ansible4 sshd[2761]: Disconnected from user ansible 192.168.10.10 port 33110
+Jun  8 18:10:52 ansible4 sshd[2740]: pam_unix(sshd:session): session closed for user ansible
+Jun  8 18:27:03 ansible4 sshd[3298]: Accepted publickey for ansible from 192.168.10.10 port 47500 ssh2: RSA SHA256:E3pqI2uHxknfxLwdHy/N3P9/H6rFqybdNVsVn13aMb4
+Jun  8 18:27:03 ansible4 systemd[3302]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 18:27:03 ansible4 sshd[3298]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  8 18:27:04 ansible4 sudo[3494]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-icbuynzopfugbfqbrsazjwxcwnzqshyu ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780910823.9042144-16450-129882293297829/AnsiballZ_setup.py'
+Jun  8 18:27:04 ansible4 sudo[3494]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 18:27:04 ansible4 sudo[3494]: pam_unix(sudo:session): session closed for user root
+Jun  8 18:27:04 ansible4 sudo[3574]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-soqmttblltaizmrdbrowjmbvqmacqyik ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1780910823.9042144-16450-129882293297829/AnsiballZ_find.py'
+Jun  8 18:27:04 ansible4 sudo[3574]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 18:27:04 ansible4 sudo[3574]: pam_unix(sudo:session): session closed for user root
+Jun  8 18:27:04 ansible4 sudo[3627]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-cbqabzgaewnusjtyurbfalvejiztkcjp ; /sbin/shutdown -h 0 "Shut down initiated by Ansible"'
+Jun  8 18:27:04 ansible4 sudo[3627]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Jun  8 18:27:04 ansible4 sudo[3627]: pam_unix(sudo:session): session closed for user root
+Jun  8 18:27:05 ansible4 sshd[3298]: pam_unix(sshd:session): session closed for user ansible
+Jun  9 09:35:00 ansible4 polkitd[878]: Loading rules from directory /etc/polkit-1/rules.d
+Jun  9 09:35:00 ansible4 polkitd[878]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jun  9 09:35:00 ansible4 polkitd[878]: Finished loading, compiling and executing 13 rules
+Jun  9 09:35:00 ansible4 polkitd[878]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jun  9 09:35:01 ansible4 sshd[979]: Server listening on 0.0.0.0 port 22.
+Jun  9 09:35:01 ansible4 sshd[979]: Server listening on :: port 22.
+Jun  9 10:17:27 ansible4 sshd[1516]: Accepted publickey for root from 192.168.10.10 port 53908 ssh2: RSA SHA256:E3pqI2uHxknfxLwdHy/N3P9/H6rFqybdNVsVn13aMb4
+Jun  9 10:17:27 ansible4 systemd[1520]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+Jun  9 10:17:27 ansible4 sshd[1516]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+Jun  9 10:17:28 ansible4 sshd[1537]: Received disconnect from 192.168.10.10 port 53908:11: disconnected by user
+Jun  9 10:17:28 ansible4 sshd[1537]: Disconnected from user root 192.168.10.10 port 53908
+Jun  9 10:17:28 ansible4 sshd[1516]: pam_unix(sshd:session): session closed for user root
+Jun  9 14:41:29 ansible4 sshd[1707]: Accepted publickey for ansible from 192.168.10.10 port 60244 ssh2: RSA SHA256:E3pqI2uHxknfxLwdHy/N3P9/H6rFqybdNVsVn13aMb4
+Jun  9 14:41:29 ansible4 systemd[1711]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Jun  9 14:41:29 ansible4 sshd[1707]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)

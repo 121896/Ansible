@@ -1,0 +1,8 @@
+---
+- name: Remove file.yml
+  hosts: all
+  tasks:
+    - name: Remove file
+      ansible.builtin.file:
+        path: /home/devops
+        state: absent
