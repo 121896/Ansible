@@ -1,0 +1,24 @@
+---
+- name: Time Syncronization
+  hosts: all
+  gather_facts: false
+  tasks:
+    ####################################
+    # 1) Timezone: Asia/Seoul - community.general.timezone
+    # 2) NTP Client configuration - role
+    ####################################
+
+    # 1) Timezone: Asia/Seoul - community.general.timezone
+    # (ㄱ) tzselect  (ㄴ) timedatectl list-timezones | grep -i seoul
+    - name: Timezone configuration
+      community.general.timezone:
+        name: "Asia/Seoul"
+
+    # 2) NTP Client configuration - role
+    - name: NTP Client configuration
+      ansible.builtin.include_role:
+        name: fedora.linux_system_roles.timesync
+      vars:
+        timesync_ntp_servers:
+          - hostname: kr.pool.ntp.org
+            iburst: true
