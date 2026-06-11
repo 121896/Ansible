@@ -2,4 +2,4 @@
 - name: Demo Web
   hosts: all
   roles:
-    - demoweb
+    - jang4sc.bscweb
